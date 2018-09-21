@@ -1,0 +1,39 @@
+body{
+  background-color:#659DBD;
+  font-family:'PT Sans', sans-serif;
+}
+h1{
+  font-size:40px;
+  text-align:center;
+}
+h2{
+  font-size:20px;
+  text-align:center;
+  font-weight:bold;
+}
+h3{
+  font-size:17px;
+}
+.card{
+  background-color:#FFEBCD;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  margin-top:60px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#submit{
+  text-align:center;
+  background-color:#659DBD;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size:15px;
+}
+#submit:hover{
+  background-color:white;
+}
+#total {
+  display: none;
+}

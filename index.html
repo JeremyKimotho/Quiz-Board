@@ -5,14 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Final Quiz</title>
-  <img src='images/icon.ico' alt='icon for page'>
+  <link rel="shortcut icon" href="images/icon.ico" />
   <link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
   <link href='css/styles.css' rel='stylesheet' type='text/css'>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 <body>
-  
+  <div class='card'>
+    <h1>Final Quiz</h1>
+    <p>
+      <h2>Remember to answer every question. Be calm and remember every think we've learnt. Good luck!</h2>
+    </p>
+    <p>
+      <form>
+        <ol>
+          <h3>
+            <li>What is Javascript?</li><br>
+              <input type="radio" name="questions"> A type of animal<br>
+              <input type="radio" name="questions"> Foreign Language<br>
+              <input type="radio" name="questions" id='correct1'> Programming Language<br>
+              <input type="radio" name="questions"> Never heard of it<br>
+          </h3>
+        </ol>
+        <input type="submit" value="Submit" id='submit' onclick='recordMarks()'>
+      </form>
+    </p>
+    <br><h3 id ='score'> Out of 15</h3>
+  </div>
 </body>
 </html>
