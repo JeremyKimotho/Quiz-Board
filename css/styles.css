@@ -22,6 +22,7 @@ h3{
   width: 55%;
   margin-top:60px;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom:60px;
 }
 #submit{
   text-align:center;
@@ -34,6 +35,7 @@ h3{
 #submit:hover{
   background-color:white;
 }
-#total {
+#score-shows {
   display: none;
+  text-align:center;
 }

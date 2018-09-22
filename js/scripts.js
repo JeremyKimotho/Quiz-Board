@@ -6,7 +6,7 @@ function sum(input) {
     return false;
 
   var total = 0;
-  for (var i = 0; i < input.length; i++) {
+  for (var i = 0; i < total.length; i++) {
     if (isNaN(input[i])) {
       continue;
     }
@@ -17,23 +17,39 @@ function sum(input) {
 
 // User Logic
 
-var score=[]
-
-function recordMarks(){
-
 $(document).ready(function () {
-  $("input#correct1").click(function (event) {
-    event.preventDefault();
-    var result = score.push(1);
-    $("#score").text(result);
+  $("#submit").click(function () {
+    $("#score-shows").toggle();
+    $("#score-hidden").toggle();
   });
 });
+
+var score=[0]
+
+$(document).ready(function(){
+  $("#correct1").change(function () { 
+      if ($(this).is(":checked")) { 
+        return score.push(1) 
+      }else{
+        return score.push(0)
+      }
+    })
 }
 
-$(document).ready(function () {
+,$(document).ready(function () {
+  $("#correct2").change(function () { 
+      if ($(this).is(":checked")) { 
+        return score.push(1) 
+      }else {
+        return score.push(0)
+      }
+    })
+}
+
+,$(document).ready(function () {
   $("input#submit").click(function (event) {
     event.preventDefault();
-    var result = sum(score);
-    $("#score").text(result);
-  });
-});
+      var result = sum(score);
+      $("#score").text(result);
+  })
+})))

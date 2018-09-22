@@ -21,19 +21,94 @@
     </p>
     <p>
       <form>
-        <ol>
-          <h3>
-            <li>What is Javascript?</li><br>
-              <input type="radio" name="questions"> A type of animal<br>
-              <input type="radio" name="questions"> Foreign Language<br>
-              <input type="radio" name="questions" id='correct1'> Programming Language<br>
-              <input type="radio" name="questions"> Never heard of it<br>
-          </h3>
-        </ol>
-        <input type="submit" value="Submit" id='submit' onclick='recordMarks()'>
+        <div id='score-hidden'>
+          <ol>
+            <h3>
+              <li>What is Javascript?</li><br>
+                <input type="radio" name="questions1" id='wrong1a'> A type of animal<br>
+                <input type="radio" name="questions1" id='wrong1b'> Foreign Language<br>
+                <input type="radio" name="questions1" id='correct1'> Programming Language<br>
+                <input type="radio" name="questions1" id='wrong1c'> Never heard of it<br>
+                <br><li>Along with HTML and CSS, Javascript is viewed as the core language of?</li><br>
+                <input type="radio" name="questions2" id='wrong2a'> Cuba<br>
+                <input type="radio" name="questions2" id='correct2'> Internet<br>
+                <input type="radio" name="questions2" id='wrong2b'> Burundi<br>
+                <input type="radio" name="questions2" id='wrong2c'> Javascript is not a language<br>
+                <br><li>Inside which HTML element do we put the Javascript?</li><br>
+                <input type="radio" name="questions3" id='correct3'> script<br>
+                <input type="radio" name="questions3" id='wrong3a'> scripting<br>
+                <input type="radio" name="questions3" id='wrong3b'> javascript<br>
+                <input type="radio" name="questions3" id='wrong3c'> js<br>
+                <br><li>Where is the correct place to insert a link to Javascript?</li><br>
+                <input type="radio" name="questions4" id='wrong4a'> Head<br>
+                <input type="radio" name="questions4" id='wrong4b'> Body<br>
+                <input type="radio" name="questions4" id='corretc4'> Head or Body<br>
+                <input type="radio" name="questions4" id='wrong4c'> Javascript is linked using CSS<br>
+                <br><li>What is the correct syntax for referring to an external script?</li><br>
+                <input type="radio" name="questions5" id='wrong5a'> script href<br>
+                <input type="radio" name="questions5" id='correct5'> script src<br>
+                <input type="radio" name="questions5" id='wrong5b'> script name<br>
+                <input type="radio" name="questions5" id='wrong5c'> my scripts name is<br>
+                <br><li>How do you write 'Hello World' in an alert box?</li><br>
+                <input type="radio" name="questions6" id='wrong6a'> msgBox('Hello World')<br>
+                <input type="radio" name="questions6" id='wrong6b'> msg('Hello World')<br>
+                <input type="radio" name="questions6" id='correct6'> alert('Hello World')<br>
+                <input type="radio" name="questions6" id='wrong6c'> alertBox('Hello World')<br>
+                <br><li>How do you create a function in Javascript?</li><br>
+                <input type="radio" name="questions7" id='correct7'> function myFunction()<br>
+                <input type="radio" name="questions7" id='wrong7a'> function=myFunction()<br>
+                <input type="radio" name="questions7" id='wrong7b'> function:myFunction()<br>
+                <input type="radio" name="questions7" id='wrong7c'> Functions don't exist in Javascript<br>
+                <br><li>What is the correct way to write a Javascript array?</li><br>
+                <input type="radio" name="questions8" id='correct8'> var colors=[]<br>
+                <input type="radio" name="questions8" id='wrong8a'> var colors={}<br>
+                <input type="radio" name="questions8" id='wrong8b'> var colors:{}<br>
+                <input type="radio" name="questions8" id='wrong8c'> var colors:[]<br>
+                <br><li>The Bootstrap grid system is based on how many units?</li><br>
+                <input type="radio" name="questions9" id='wrong9a'> 9<br>
+                <input type="radio" name="questions9" id='correct9'> 12<br>
+                <input type="radio" name="questions9" id='wrong9b'> 3<br>
+                <input type="radio" name="questions9" id='wrong9c'> 6<br>
+                <br><li>Which class is used to create a badge in Bootstrap?</li><br>
+                <input type="radio" name="questions10" id='correct10'> badge<br>
+                <input type="radio" name="questions10" id='wrong10a'> label<br>
+                <input type="radio" name="questions10" id='wrong10b'> flag<br>
+                <input type="radio" name="questions10" id='wrong10c'> tag<br>
+                <br><li>Which class is used to create a basic list group?</li><br>
+                <input type="radio" name="questions11" id='wrong11a'> grouped-list<br>
+                <input type="radio" name="questions11" id='wrong11c'> group<br>
+                <input type="radio" name="questions11" id='wrong11b'> group-list<br>
+                <input type="radio" name="questions11" id='correct11'> list-group<br>
+                <br><li>Which of the following is correct?</li><br>
+                <input type="radio" name="questions12" id='correct12'> jQuery is a Javascript library<br>
+                <input type="radio" name="questions12" id='wrong12a'> jQuery is a JSON library<br>
+                <input type="radio" name="questions12" id='wrong12b'> jQuery is an HTML library<br>
+                <input type="radio" name="questions12" id='wrong12c'> jQuery is a CSS library<br>
+                <br><li>Which sign does jQuery use for short?</li><br>
+                <input type="radio" name="questions13" id='wrong13a'> ?<br>
+                <input type="radio" name="questions13" id='wrong13b'> #<br>
+                <input type="radio" name="questions13" id='correct13'> $<br>
+                <input type="radio" name="questions13" id='wrong13c'> %<br>
+                <br><li>Which jQuery method is used to hide selected elements?</li><br>
+                <input type="radio" name="questions14" id='wrong14a'> visible(false)<br>
+                <input type="radio" name="questions14" id='wrong14b'> display(none)<br>
+                <input type="radio" name="questions14" id='wrong14c'> hidden()<br>
+                <input type="radio" name="questions14" id='correct14'> hide()<br>
+                <br><li>What is debugging?</li><br>
+                <input type="radio" name="questions15" id='wrong15a'> A programming language<br>
+                <input type="radio" name="questions15" id='wrong15b'> Killing insects<br>
+                <input type="radio" name="questions15" id='wrong15c'> A function in jQuery<br>
+                <input type="radio" name="questions15" id='correct15'> Checking code for errors<br>
+            </h3>
+          </ol>
+          <input type="submit" value="Submit" id='submit'>
+        </div>
       </form>
+      <div id='score-shows'>
+        <h3>Congratulations on completing the course!</h3>
+        <br id='score'>
+      </div>
     </p>
-    <br><h3 id ='score'> Out of 15</h3>
   </div>
 </body>
 </html>
