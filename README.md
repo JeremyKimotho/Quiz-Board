@@ -14,5 +14,7 @@
 {No known bugs are present}
 ## Technologies Used
 {The website is built using html, css, and javascript.}
-##Requirements
+## Requirements
 {The website has elements of jQuery and bootstrap and requires those two libraries to function correctly.}
+## Live Link
+{ https://jeremykimotho.github.io/Quiz-Board/ }
