@@ -1,21 +1,28 @@
 // Business Logic 
 
-function sum(input) {
+var answers = ['C', 'B', 'A', 'C', 'B', 'C', 'A', 'A', 'B', 'A', 'D', 'A', 'C', 'D', 'D'],
+  tot = answers.length;
 
-  if (toString.call(input) !== "[object Array]")
-    return false;
-
-  var total = 0;
-  for (var i = 0; i < total.length; i++) {
-    if (isNaN(input[i])) {
-      continue;
-    }
-    total += Number(input[i]);
-  }
-  return total;
+function getCheckedValue(radioName) {
+  var radios = document.getElementsByName(radioName); 
+  for (var y = 0; y < radios.length; y++)
+    if (radios[y].checked) return radios[y].value; 
 }
 
+function getScore() {
+  var score = 0;
+  for (var i = 0; i < tot; i++)
+    if (getCheckedValue("questions" + i) === answers[i]) score += 1; 
+  return score;
+}
+
+function getResults() {
+  alert("Your score is " + getScore() + "/" + tot);
+}
+
+
 // User Logic
+var score=[]
 
 $(document).ready(function () {
   $("#submit").click(function () {
@@ -24,32 +31,15 @@ $(document).ready(function () {
   });
 });
 
-var score=[0]
-
-$(document).ready(function(){
-  $("#correct1").change(function () { 
-      if ($(this).is(":checked")) { 
-        return score.push(1) 
-      }else{
-        return score.push(0)
-      }
-    })
-}
-
-,$(document).ready(function () {
-  $("#correct2").change(function () { 
-      if ($(this).is(":checked")) { 
-        return score.push(1) 
-      }else {
-        return score.push(0)
-      }
-    })
-}
-
-,$(document).ready(function () {
+$(document).ready(function () {
   $("input#submit").click(function (event) {
     event.preventDefault();
-      var result = sum(score);
+      var result = getResults();
       $("#score").text(result);
   })
-})))
+});
+
+
+
+
+
