@@ -17,4 +17,4 @@
 ## Requirements
 {The website has elements of jQuery and bootstrap and requires those two libraries to function correctly.}
 ## Live Link
-{ https://jeremykimotho.github.io/Quiz-Board/ }
+ https://jeremykimotho.github.io/Quiz-Board/ 
